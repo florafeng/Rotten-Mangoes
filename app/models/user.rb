@@ -11,6 +11,6 @@ class User < ApplicationRecord
 	validates :lastname,
 	presence: true
 
-	validates :password
+	validates :password,
 	length: { in: 6..28}, on: :create
 end
